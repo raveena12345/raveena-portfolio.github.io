@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+}
+
+html, body {
+    height: 100%; /* Ensure the body takes the full height */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack children vertically */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #E2CAD8;
+    background: #1A0F29;
+    flex: 1; /* Allow body to grow */
+}
+
+header {
+    background-color: #3D1A47;
+    color: #E2CAD8;
+    padding: 1.5rem 0; /* Padding top and bottom */
+    text-align: center;
+    width: 100%; /* Ensure full width */
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 25px;
+}
+
+nav ul li a {
+    color: #E2CAD8;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #9B57D8;
+}
+
+section {
+    padding: 3rem;
+    text-align: center;
+    border: 3px solid #6A3F8E;
+    margin: 20px auto; /* Centered the section with auto margins */
+    border-radius: 15px;
+    width: 800px; /* Set fixed width for all sections */
+    height: auto; /* Set to auto for flexibility */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #9B57D8;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #D8A5E8;
+    font-size: 2rem;
+}
+
+.home {
+    background-color: #1A0F29;
+    color: #E2CAD8;
+    padding: 5rem 0;
+    border-radius: 15px;
+}
+
+.about, .skills, .projects, .achievements {
+    background-color: #3D1A47;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 3rem; /* Increased padding for more space */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the content */
+    justify-content: center; /* Center vertically */
+}
+
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.education-box {
+    background-color: #6A3F8E;
+    color: #E2CAD8;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.education-box h4 {
+    margin-bottom: 10px;
+    color: #D8A5E8;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills ul li {
+    background: #6A3F8E;
+    color: #E2CAD8;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.projects p {
+    font-size: 1.2rem;
+    color: #E2CAD8;
+}
+
+.achievements ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.achievements ul li {
+    background: #3D1A47;
+    color: #E2CAD8;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.white-text {
+    color: white; /* White text color */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #3D1A47;
+    color: #E2CAD8;
+    width: 100%; /* Ensure full width */
+}
+
+/* Existing styles... */
+
+.social-links {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the links horizontally */
+    gap: 20px; /* Space between the icons */
+    margin-top: 20px; /* Space above the icons */
+}
+
+.social-links a {
+    color: #E2CAD8; /* Icon color */
+    font-size: 2rem; /* Size of the icons */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.social-links a:hover {
+    color: #9B57D8; /* Change color on hover */
+}
+
+/* Continue with your existing styles... */
