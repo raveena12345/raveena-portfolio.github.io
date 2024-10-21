@@ -12,6 +12,7 @@ html, body {
     height: 100%; /* Ensure the body takes the full height */
     display: flex; /* Enable flexbox */
     flex-direction: column; /* Stack children vertically */
+    width: 100%;
 }
 
 body {
@@ -20,6 +21,9 @@ body {
     color: #E2CAD8;
     background: #1A0F29;
     flex: 1; /* Allow body to grow */
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Ensure full width */
 }
 
 header {
@@ -27,17 +31,23 @@ header {
     color: #E2CAD8;
     padding: 1rem; /* Adjusted padding for mobile */
     text-align: center;
-    width: 100%; /* Ensure full width */
+    width: 100vw; /* Full viewport width to cover right and left */
 }
 
 nav ul {
     list-style: none;
     padding: 0; /* Reset padding */
+    margin: 0; /* Reset margin */
+    text-align: center; /* Ensure navigation items are centered */
 }
 
 nav ul li {
     display: inline-block; /* Change to inline-block for better responsiveness */
     margin-right: 15px; /* Adjust margin for spacing */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove margin on the last item */
 }
 
 nav ul li a {
@@ -78,6 +88,7 @@ h2 {
     color: #E2CAD8;
     padding: 5rem 0;
     border-radius: 15px;
+    width: 100%; /* Ensure home section covers full width */
 }
 
 .about, .skills, .projects, .achievements {
@@ -164,7 +175,7 @@ footer {
     padding: 1rem 0;
     background-color: #3D1A47;
     color: #E2CAD8;
-    width: 100%; /* Ensure full width */
+    width: 100vw; /* Full viewport width to cover right and left */
 }
 
 /* Responsive Styles */
